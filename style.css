@@ -1,0 +1,228 @@
+/*
+ * CSS Animation: Skills
+ * Developer: Peter R. Stuhlmann
+ * Developer Website: https://peter-stuhlmann.de
+ * Licence: 
+ */
+
+
+/* --------------------------------------------------------
+      GENERAL
+   -------------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, sans-serif
+}
+
+header {
+    background-color: #ccc;
+    border-bottom: 1px solid #272727;
+    position: sticky;
+    top: 0
+}
+
+h1 {
+    font-size: 2.3em;
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px 15px 15px 15px;
+    box-sizing: border-box
+}
+
+h2 {
+    font-size: 1.9em;
+    margin: 45px 0 20px 0
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 45px 0 20px 0
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+main {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    box-sizing: border-box
+}
+
+footer {
+    width: 100%;
+    background: #ccc;
+    border-top: 1px solid #000
+}
+
+.footer {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box
+}
+
+.footer p {
+    display: inline-block
+}
+
+.footernav {
+    display: inline-block;
+    float: right
+}
+
+.footernav li {
+    display: inline
+}
+
+
+/* --------------------------------------------------------
+      SKILLS / HOBBIES
+   -------------------------------------------------------- */
+
+ul.skills {
+    padding: 0;
+}
+
+ul.skills li {
+    list-style-type: none;
+    border-radius: 4px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+    background-color: #ccc;
+}
+
+.niveau-0,
+.niveau-1,
+.niveau-2,
+.niveau-3,
+.niveau-4,
+.niveau-5 {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0 8px 0;
+    border-radius: 4px;
+}
+
+.niveau-0 {
+    width: 0%;
+}
+
+.niveau-1 {
+    width: 20%;
+    animation: niveau-1 5s linear 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes niveau-1 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 20%;
+        background-color: #272727;
+    }
+}
+
+.niveau-2 {
+    width: 40%;
+    animation: niveau-2 5s linear 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes niveau-2 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 40%;
+        background-color: #272727;
+    }
+}
+
+.niveau-3 {
+    width: 60%;
+    animation: niveau-3 5s linear 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes niveau-3 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 60%;
+        background-color: #272727;
+    }
+}
+
+.niveau-4 {
+    width: 80%;
+    animation: niveau-4 5s linear 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes niveau-4 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 80%;
+        background-color: #272727;
+    }
+}
+
+.niveau-5 {
+    width: 100%;
+    animation: niveau-5 5s linear 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes niveau-5 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 100%;
+        background-color: #272727;
+    }
+}
+
+.skills span {
+    padding: 8px;
+}
+
+ul.hobbies {
+    margin: 0 0 14px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.hobbies li {
+    background-color: #272727;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 2.5em;
+    margin: 4px;
+    padding: 8px 10px 8px 10px;
+    word-wrap: break-word;
+    display: inline;
+}
